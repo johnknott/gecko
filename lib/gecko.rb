@@ -13,7 +13,7 @@ module Gecko
   end
 end
 
-require "gecko/version" unless Gecko.const_defined?(:VERSION)
+require "gecko/version" #unless Gecko.const_defined?(:VERSION)
 require "gecko/configurator"
 require "gecko/http"
 require "gecko/widget"
