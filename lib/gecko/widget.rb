@@ -34,7 +34,7 @@ module Gecko
 
     def push_requests(&each_result)
       self.keys.map do |key|
-        http = Gecko::Http.new
+        http = Gecko::Http.new(request: { open_timeout: 2, timeout: 5 })
         push_result = http.post(self.push_url(key), self.payload)
         each_result.call(push_result, key) if each_result
         push_result
