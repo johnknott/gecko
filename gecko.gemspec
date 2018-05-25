@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Gecko::VERSION
 
-  gem.add_dependency "faraday", "~> 0.9.0"
+  gem.add_dependency "faraday", "~> 0.10.0"
   gem.add_dependency "faraday_middleware-multi_json", "~> 0.0.6"
   gem.add_dependency "multi_json"
 
